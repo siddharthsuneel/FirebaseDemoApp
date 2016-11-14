@@ -25,6 +25,9 @@
 //    self.window.rootViewController = _navController;
 //    [self.window makeKeyAndVisible];
     
+//    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+//    [FBSDKSettings setAppID:@"550632358420336"];
+
     return YES;
 }
 
@@ -55,5 +58,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+//- (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation {
+//    return [[FBSDKApplicationDelegate sharedInstance] application:application
+//                                                          openURL:url
+//                                                sourceApplication:sourceApplication
+//                                                       annotation:annotation];
+//}
 
 @end

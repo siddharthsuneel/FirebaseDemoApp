@@ -78,12 +78,49 @@
                                     <action selector="didClickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBi-KP-0rW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-P7-Dlz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SL6-Gh-Ij8"/>
+                                    <constraint firstAttribute="width" constant="30" id="yf0-dT-rIV"/>
+                                </constraints>
+                                <state key="normal" image="facebook"/>
+                                <connections>
+                                    <action selector="didClickFbLoggingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgC-Kg-k4S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulI-1K-CBS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ki6-uQ-zAC"/>
+                                    <constraint firstAttribute="height" constant="30" id="w0y-ON-d35"/>
+                                </constraints>
+                                <state key="normal" image="twitter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deb-ly-EoC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bbg-QF-ypN"/>
+                                    <constraint firstAttribute="width" constant="30" id="Qnm-RX-BjX"/>
+                                </constraints>
+                                <state key="normal" image="google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axp-q9-dhJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0du-xO-Vif"/>
+                                    <constraint firstAttribute="width" constant="30" id="CJg-Ak-ZcU"/>
+                                </constraints>
+                                <state key="normal" image="github"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bUH-P7-Dlz" firstAttribute="top" secondItem="gVz-Yw-6hA" secondAttribute="bottom" constant="15" id="1NX-sp-KqN"/>
                             <constraint firstItem="hE6-Al-I7e" firstAttribute="top" secondItem="V62-4t-Wk7" secondAttribute="bottom" constant="25" id="3VL-A4-6fS"/>
+                            <constraint firstItem="axp-q9-dhJ" firstAttribute="leading" secondItem="deb-ly-EoC" secondAttribute="trailing" constant="25" id="C2y-Ra-C9z"/>
+                            <constraint firstItem="deb-ly-EoC" firstAttribute="leading" secondItem="ulI-1K-CBS" secondAttribute="trailing" constant="25" id="JFp-fG-obd"/>
                             <constraint firstItem="tEG-Rx-ouY" firstAttribute="top" secondItem="hE6-Al-I7e" secondAttribute="bottom" constant="25" id="JMm-B6-eF7"/>
                             <constraint firstItem="hE6-Al-I7e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="NL0-dX-ree"/>
+                            <constraint firstItem="axp-q9-dhJ" firstAttribute="top" secondItem="deb-ly-EoC" secondAttribute="top" id="PUF-iL-bWx"/>
+                            <constraint firstItem="ulI-1K-CBS" firstAttribute="top" secondItem="gVz-Yw-6hA" secondAttribute="bottom" constant="15" id="T3j-l6-H5m"/>
+                            <constraint firstItem="deb-ly-EoC" firstAttribute="top" secondItem="ulI-1K-CBS" secondAttribute="top" id="Wwx-qN-4ig"/>
                             <constraint firstAttribute="trailing" secondItem="tEG-Rx-ouY" secondAttribute="trailing" constant="100" id="ZsM-iX-aZZ"/>
                             <constraint firstItem="V62-4t-Wk7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bjB-Dj-WKr"/>
                             <constraint firstAttribute="trailing" secondItem="qKI-gP-Irs" secondAttribute="trailing" constant="50" id="e4M-Xc-aDa"/>
@@ -93,15 +130,20 @@
                             <constraint firstItem="gVz-Yw-6hA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="iuP-EV-N1H"/>
                             <constraint firstAttribute="trailing" secondItem="V62-4t-Wk7" secondAttribute="trailing" constant="50" id="jHT-QD-ToH"/>
                             <constraint firstItem="qKI-gP-Irs" firstAttribute="top" secondItem="tEG-Rx-ouY" secondAttribute="bottom" constant="25" id="kRW-Ya-S2S"/>
+                            <constraint firstItem="ulI-1K-CBS" firstAttribute="leading" secondItem="bUH-P7-Dlz" secondAttribute="trailing" constant="25" id="qgE-g9-I5q"/>
+                            <constraint firstItem="bUH-P7-Dlz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="vO2-Wj-zAj"/>
                             <constraint firstAttribute="trailing" secondItem="hE6-Al-I7e" secondAttribute="trailing" constant="50" id="waH-lM-gHi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KLk-lJ-fgd"/>
                     <connections>
+                        <outlet property="fbButton" destination="bUH-P7-Dlz" id="1xq-Se-Nku"/>
                         <outlet property="forgetPasswdButton" destination="qKI-gP-Irs" id="c3E-bp-XK7"/>
+                        <outlet property="googleButton" destination="deb-ly-EoC" id="EaP-wa-1GQ"/>
                         <outlet property="loginButton" destination="tEG-Rx-ouY" id="4o1-hG-2PK"/>
                         <outlet property="passwordTextField" destination="hE6-Al-I7e" id="jNf-nS-7Zi"/>
                         <outlet property="signUpButton" destination="gVz-Yw-6hA" id="bIf-SE-9gZ"/>
+                        <outlet property="twitterButton" destination="ulI-1K-CBS" id="pP0-1J-KMp"/>
                         <outlet property="userNameTextField" destination="V62-4t-Wk7" id="CZV-V5-tbz"/>
                     </connections>
                 </viewController>
@@ -265,4 +307,10 @@
             <point key="canvasLocation" x="856.79999999999995" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook" width="60" height="60"/>
+        <image name="github" width="112" height="112"/>
+        <image name="google" width="70" height="70"/>
+        <image name="twitter" width="76" height="74"/>
+    </resources>
 </document>

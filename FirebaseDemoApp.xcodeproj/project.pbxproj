@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2CB8DA1DD9B560004E160E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CB8D81DD9B560004E160E /* HomeViewController.m */; };
+		2B2CB8DB1DD9B560004E160E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2CB8D91DD9B560004E160E /* HomeViewController.xib */; };
 		2B7336E21DD59F4D00DEF213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7336E11DD59F4D00DEF213 /* main.m */; };
 		2B7336E51DD59F4D00DEF213 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7336E41DD59F4D00DEF213 /* AppDelegate.m */; };
 		2B7336E81DD59F4D00DEF213 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7336E71DD59F4D00DEF213 /* LoginViewController.m */; };
@@ -17,8 +19,8 @@
 		2B7337061DD59F4D00DEF213 /* FirebaseDemoAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7337051DD59F4D00DEF213 /* FirebaseDemoAppUITests.m */; };
 		2B7337141DD59FBC00DEF213 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B7337131DD59FBC00DEF213 /* GoogleService-Info.plist */; };
 		2BA7E6E81DD5C448001FF53B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7E6E61DD5C448001FF53B /* SignUpViewController.m */; };
-		2BA7E6EC1DD5CE81001FF53B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7E6EB1DD5CE81001FF53B /* HomeViewController.m */; };
 		2BA7E6F11DD5D216001FF53B /* UIAlertController+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7E6F01DD5D216001FF53B /* UIAlertController+Window.m */; };
+		2BE6893D1DD9D4C600C7056D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE6893C1DD9D4C600C7056D /* FBSDKLoginKit.framework */; };
 		54883C5AB036FE20AEDE800E /* libPods-FirebaseDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E619A8872A95B79F8F26A3E7 /* libPods-FirebaseDemoApp.a */; };
 		6F6A4091BF60526EC0E94D03 /* libPods-FirebaseDemoAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 470FEC600F11261B4AE55846 /* libPods-FirebaseDemoAppUITests.a */; };
 		9DDAD0B7667BCAE84FA63E31 /* libPods-FirebaseDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FF4B2323C7B48B3DF8D3CE /* libPods-FirebaseDemoAppTests.a */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B2CB8D71DD9B560004E160E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2B2CB8D81DD9B560004E160E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2B2CB8D91DD9B560004E160E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2B7336DD1DD59F4D00DEF213 /* FirebaseDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7336E11DD59F4D00DEF213 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B7336E31DD59F4D00DEF213 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,12 +66,11 @@
 		2B7337131DD59FBC00DEF213 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BA7E6E51DD5C448001FF53B /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		2BA7E6E61DD5C448001FF53B /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		2BA7E6EA1DD5CE81001FF53B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		2BA7E6EB1DD5CE81001FF53B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		2BA7E6EF1DD5D216001FF53B /* UIAlertController+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Window.h"; sourceTree = "<group>"; };
 		2BA7E6F01DD5D216001FF53B /* UIAlertController+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Window.m"; sourceTree = "<group>"; };
 		2BA7E6F21DD5E948001FF53B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2BA7E6F71DD5F483001FF53B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2BE6893C1DD9D4C600C7056D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		470FEC600F11261B4AE55846 /* libPods-FirebaseDemoAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirebaseDemoAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ABDEA01E7872E192B4B4A1 /* Pods-FirebaseDemoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemoAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDemoAppUITests/Pods-FirebaseDemoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7778DA52C3E99A545E39E885 /* Pods-FirebaseDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDemoApp/Pods-FirebaseDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE6893D1DD9D4C600C7056D /* FBSDKLoginKit.framework in Frameworks */,
 				54883C5AB036FE20AEDE800E /* libPods-FirebaseDemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +143,9 @@
 				2B7336E71DD59F4D00DEF213 /* LoginViewController.m */,
 				2BA7E6E51DD5C448001FF53B /* SignUpViewController.h */,
 				2BA7E6E61DD5C448001FF53B /* SignUpViewController.m */,
-				2BA7E6EA1DD5CE81001FF53B /* HomeViewController.h */,
-				2BA7E6EB1DD5CE81001FF53B /* HomeViewController.m */,
+				2B2CB8D71DD9B560004E160E /* HomeViewController.h */,
+				2B2CB8D81DD9B560004E160E /* HomeViewController.m */,
+				2B2CB8D91DD9B560004E160E /* HomeViewController.xib */,
 				2B7336E91DD59F4D00DEF213 /* Main.storyboard */,
 				2B7336EC1DD59F4D00DEF213 /* Assets.xcassets */,
 				2B7336EE1DD59F4D00DEF213 /* LaunchScreen.storyboard */,
@@ -203,6 +209,7 @@
 		EEA592CF168554A927F18F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BE6893C1DD9D4C600C7056D /* FBSDKLoginKit.framework */,
 				E619A8872A95B79F8F26A3E7 /* libPods-FirebaseDemoApp.a */,
 				E0FF4B2323C7B48B3DF8D3CE /* libPods-FirebaseDemoAppTests.a */,
 				470FEC600F11261B4AE55846 /* libPods-FirebaseDemoAppUITests.a */,
@@ -329,6 +336,7 @@
 			files = (
 				2B7336F01DD59F4D00DEF213 /* LaunchScreen.storyboard in Resources */,
 				2B7337141DD59FBC00DEF213 /* GoogleService-Info.plist in Resources */,
+				2B2CB8DB1DD9B560004E160E /* HomeViewController.xib in Resources */,
 				2B7336ED1DD59F4D00DEF213 /* Assets.xcassets in Resources */,
 				2B7336EB1DD59F4D00DEF213 /* Main.storyboard in Resources */,
 			);
@@ -482,8 +490,8 @@
 				2B7336E51DD59F4D00DEF213 /* AppDelegate.m in Sources */,
 				2BA7E6F11DD5D216001FF53B /* UIAlertController+Window.m in Sources */,
 				2BA7E6E81DD5C448001FF53B /* SignUpViewController.m in Sources */,
-				2BA7E6EC1DD5CE81001FF53B /* HomeViewController.m in Sources */,
 				2B7336E21DD59F4D00DEF213 /* main.m in Sources */,
+				2B2CB8DA1DD9B560004E160E /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

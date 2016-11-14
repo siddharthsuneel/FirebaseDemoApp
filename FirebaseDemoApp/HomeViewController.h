@@ -2,7 +2,7 @@
 //  HomeViewController.h
 //  FirebaseDemoApp
 //
-//  Created by Siddharth Suneel on 11/11/16.
+//  Created by Siddharth Suneel on 14/11/16.
 //  Copyright © 2016 SiddharthSuneel. All rights reserved.
 //
 
@@ -12,5 +12,6 @@
 @interface HomeViewController : UIViewController
 
 @property(nonatomic, strong)FIRUser *currentloggedInUser;
+@property (strong, nonatomic) FIRDatabaseReference *ref;
 
 @end

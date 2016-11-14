@@ -17,6 +17,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *forgetPasswdButton;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UIButton *fbButton;
+@property (weak, nonatomic) IBOutlet UIButton *twitterButton;
+@property (weak, nonatomic) IBOutlet UIButton *googleButton;
+@property (weak, nonatomic) IBOutlet UIButton *githubButton;
 
 @end
 
@@ -31,10 +35,20 @@
 
 - (void)viewWillLayoutSubviews{
     
-    _loginButton.layer.cornerRadius = 10.0;
-    _loginButton.layer.borderColor = [UIColor blackColor].CGColor;
-    _loginButton.layer.borderWidth = 0.5;
-    
+    CGFloat buttonSize = 30.0;
+    _loginButton = [self customiseButton:_loginButton cornerRadius:10.0];
+    _fbButton = [self customiseButton:_fbButton cornerRadius:buttonSize/2];
+    _googleButton = [self customiseButton:_googleButton cornerRadius:buttonSize/2];
+    _twitterButton = [self customiseButton:_twitterButton cornerRadius:buttonSize/2];
+    _githubButton = [self customiseButton:_githubButton cornerRadius:buttonSize/2];
+}
+
+- (UIButton *)customiseButton:(UIButton *)button cornerRadius:(CGFloat)aCornerRadius{
+    button.layer.cornerRadius = aCornerRadius;
+//    button.layer.borderColor = [UIColor blackColor].CGColor;
+//    button.layer.borderWidth = 0.5;
+    button.clipsToBounds = YES;
+    return button;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,5 +84,10 @@
 - (IBAction)didclickForgetPasswd:(id)sender {
     
 }
+
+- (IBAction)didClickFbLoggingButton:(id)sender {
+
+}
+
 
 @end
