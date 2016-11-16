@@ -55,9 +55,6 @@
                                     <constraint firstAttribute="height" constant="25" id="w2d-pe-nny"/>
                                 </constraints>
                                 <state key="normal" title="Forget Password"/>
-                                <connections>
-                                    <action selector="didclickForgetPasswd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4q-6f-Bo7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVz-Yw-6hA">
                                 <constraints>
@@ -65,7 +62,6 @@
                                 </constraints>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="didClickSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OMh-sY-M2a"/>
                                     <segue destination="CGP-VH-gFM" kind="presentation" id="93V-ik-4df"/>
                                 </connections>
                             </button>
@@ -84,9 +80,6 @@
                                     <constraint firstAttribute="width" constant="30" id="yf0-dT-rIV"/>
                                 </constraints>
                                 <state key="normal" image="facebook"/>
-                                <connections>
-                                    <action selector="didClickFbLoggingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgC-Kg-k4S"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulI-1K-CBS">
                                 <constraints>
@@ -222,7 +215,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-EC-9wM">
                                 <constraints>
@@ -257,12 +250,23 @@
                                     <action selector="didClickSignUp:" destination="CGP-VH-gFM" eventType="touchUpInside" id="5NL-0E-NZ1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77m-wF-AbA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="79g-Ni-Fco"/>
+                                    <constraint firstAttribute="height" constant="20" id="GRg-hM-TMA"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cancelIcon"/>
+                                <connections>
+                                    <action selector="didClickCancelEvent:" destination="CGP-VH-gFM" eventType="touchUpInside" id="w8h-eF-PlT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9dI-1V-oK8" secondAttribute="trailing" constant="50" id="1fl-qv-NFL"/>
                             <constraint firstItem="w8h-7f-pVW" firstAttribute="leading" secondItem="2bs-Va-m4B" secondAttribute="leading" constant="50" id="8lB-d9-XPq"/>
                             <constraint firstItem="xRG-ut-QD5" firstAttribute="top" secondItem="Xc0-tA-HD9" secondAttribute="bottom" constant="15" id="FFT-Fl-8Ne"/>
+                            <constraint firstItem="77m-wF-AbA" firstAttribute="leading" secondItem="2bs-Va-m4B" secondAttribute="leading" constant="15" id="GRO-4U-eZG"/>
                             <constraint firstAttribute="trailing" secondItem="ya9-EC-9wM" secondAttribute="trailing" constant="50" id="IsA-TO-D72"/>
                             <constraint firstItem="K75-78-sUI" firstAttribute="leading" secondItem="xRG-ut-QD5" secondAttribute="trailing" constant="28" id="LiD-3Y-Xh7"/>
                             <constraint firstItem="jsY-iK-Trl" firstAttribute="leading" secondItem="2bs-Va-m4B" secondAttribute="leading" constant="50" id="NyH-Wq-Z9N"/>
@@ -288,12 +292,14 @@
                             <constraint firstAttribute="trailing" secondItem="1uY-Lj-uRg" secondAttribute="trailing" constant="50" id="pry-6T-IaS"/>
                             <constraint firstAttribute="trailing" secondItem="K75-78-sUI" secondAttribute="trailing" constant="50" id="qCn-Km-kHg"/>
                             <constraint firstAttribute="trailing" secondItem="aNZ-jq-ScE" secondAttribute="trailing" constant="50" id="vW5-Gl-z87"/>
+                            <constraint firstItem="77m-wF-AbA" firstAttribute="top" secondItem="vug-Dl-An4" secondAttribute="bottom" constant="8" id="vYN-2i-tT2"/>
                             <constraint firstItem="jsY-iK-Trl" firstAttribute="top" secondItem="w8h-7f-pVW" secondAttribute="bottom" constant="30" id="vxV-qJ-D4p"/>
                             <constraint firstItem="K75-78-sUI" firstAttribute="top" secondItem="aNZ-jq-ScE" secondAttribute="bottom" constant="15" id="wWV-b5-Pr2"/>
                             <constraint firstItem="Xc0-tA-HD9" firstAttribute="leading" secondItem="2bs-Va-m4B" secondAttribute="leading" constant="50" id="wiT-7d-06Z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="77m-wF-AbA" id="sVM-HI-1cv"/>
                         <outlet property="contactTextField" destination="K75-78-sUI" id="HWZ-eA-oeJ"/>
                         <outlet property="countryTextField" destination="ya9-EC-9wM" id="nbU-T7-ZKh"/>
                         <outlet property="emailTextField" destination="aNZ-jq-ScE" id="Uro-Nh-6yJ"/>
@@ -308,6 +314,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cancelIcon" width="51" height="51"/>
         <image name="facebook" width="60" height="60"/>
         <image name="github" width="112" height="112"/>
         <image name="google" width="70" height="70"/>

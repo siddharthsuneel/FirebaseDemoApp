@@ -82,4 +82,16 @@
 
 }
 
++ (void)displayOkAlertWithTitle:(NSString *)title message:(NSString *)aMessage okAction:(UIAlertAction *)action{
+    
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:title
+                                 message:aMessage
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:action];
+    [alert show];
+    
+}
+
 @end

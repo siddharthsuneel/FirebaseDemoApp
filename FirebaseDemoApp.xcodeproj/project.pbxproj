@@ -20,7 +20,6 @@
 		2B7337141DD59FBC00DEF213 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B7337131DD59FBC00DEF213 /* GoogleService-Info.plist */; };
 		2BA7E6E81DD5C448001FF53B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7E6E61DD5C448001FF53B /* SignUpViewController.m */; };
 		2BA7E6F11DD5D216001FF53B /* UIAlertController+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7E6F01DD5D216001FF53B /* UIAlertController+Window.m */; };
-		2BE6893D1DD9D4C600C7056D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE6893C1DD9D4C600C7056D /* FBSDKLoginKit.framework */; };
 		54883C5AB036FE20AEDE800E /* libPods-FirebaseDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E619A8872A95B79F8F26A3E7 /* libPods-FirebaseDemoApp.a */; };
 		6F6A4091BF60526EC0E94D03 /* libPods-FirebaseDemoAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 470FEC600F11261B4AE55846 /* libPods-FirebaseDemoAppUITests.a */; };
 		9DDAD0B7667BCAE84FA63E31 /* libPods-FirebaseDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FF4B2323C7B48B3DF8D3CE /* libPods-FirebaseDemoAppTests.a */; };
@@ -70,7 +69,6 @@
 		2BA7E6F01DD5D216001FF53B /* UIAlertController+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Window.m"; sourceTree = "<group>"; };
 		2BA7E6F21DD5E948001FF53B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2BA7E6F71DD5F483001FF53B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		2BE6893C1DD9D4C600C7056D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		470FEC600F11261B4AE55846 /* libPods-FirebaseDemoAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirebaseDemoAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ABDEA01E7872E192B4B4A1 /* Pods-FirebaseDemoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemoAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDemoAppUITests/Pods-FirebaseDemoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7778DA52C3E99A545E39E885 /* Pods-FirebaseDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDemoApp/Pods-FirebaseDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE6893D1DD9D4C600C7056D /* FBSDKLoginKit.framework in Frameworks */,
 				54883C5AB036FE20AEDE800E /* libPods-FirebaseDemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +206,6 @@
 		EEA592CF168554A927F18F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2BE6893C1DD9D4C600C7056D /* FBSDKLoginKit.framework */,
 				E619A8872A95B79F8F26A3E7 /* libPods-FirebaseDemoApp.a */,
 				E0FF4B2323C7B48B3DF8D3CE /* libPods-FirebaseDemoAppTests.a */,
 				470FEC600F11261B4AE55846 /* libPods-FirebaseDemoAppUITests.a */,

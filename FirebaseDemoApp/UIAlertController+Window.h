@@ -13,5 +13,6 @@
 - (void)show;
 - (void)show:(BOOL)animated;
 + (void)displayOkAlertWithTitle:(NSString *)title message:(NSString *)aMessage;
++ (void)displayOkAlertWithTitle:(NSString *)title message:(NSString *)aMessage okAction:(UIAlertAction *)action;
 
 @end

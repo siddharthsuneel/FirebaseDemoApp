@@ -45,8 +45,8 @@
 
 - (UIButton *)customiseButton:(UIButton *)button cornerRadius:(CGFloat)aCornerRadius{
     button.layer.cornerRadius = aCornerRadius;
-//    button.layer.borderColor = [UIColor blackColor].CGColor;
-//    button.layer.borderWidth = 0.5;
+    button.layer.borderColor = [UIColor blackColor].CGColor;
+    button.layer.borderWidth = 0.5;
     button.clipsToBounds = YES;
     return button;
 }
