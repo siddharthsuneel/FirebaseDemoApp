@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B192C751DDDB4BD0068DE80 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B192C741DDDB4BD0068DE80 /* UserModel.m */; };
+		2B192C781DDDB9A70068DE80 /* DeviceModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B192C771DDDB9A70068DE80 /* DeviceModal.m */; };
+		2B192C7B1DDDB9EE0068DE80 /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B192C7A1DDDB9EE0068DE80 /* TaskModel.m */; };
 		2B2CB8DA1DD9B560004E160E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CB8D81DD9B560004E160E /* HomeViewController.m */; };
 		2B2CB8DB1DD9B560004E160E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2CB8D91DD9B560004E160E /* HomeViewController.xib */; };
+		2B4B310E1DDC906C00232848 /* AddRemainderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B310C1DDC906C00232848 /* AddRemainderViewController.m */; };
+		2B4B310F1DDC906C00232848 /* AddRemainderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B4B310D1DDC906C00232848 /* AddRemainderViewController.xib */; };
 		2B7336E21DD59F4D00DEF213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7336E11DD59F4D00DEF213 /* main.m */; };
 		2B7336E51DD59F4D00DEF213 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7336E41DD59F4D00DEF213 /* AppDelegate.m */; };
 		2B7336E81DD59F4D00DEF213 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7336E71DD59F4D00DEF213 /* LoginViewController.m */; };
@@ -43,9 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B192C731DDDB4BD0068DE80 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		2B192C741DDDB4BD0068DE80 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		2B192C761DDDB9A70068DE80 /* DeviceModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModal.h; sourceTree = "<group>"; };
+		2B192C771DDDB9A70068DE80 /* DeviceModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModal.m; sourceTree = "<group>"; };
+		2B192C791DDDB9EE0068DE80 /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		2B192C7A1DDDB9EE0068DE80 /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
 		2B2CB8D71DD9B560004E160E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2B2CB8D81DD9B560004E160E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		2B2CB8D91DD9B560004E160E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2B4B310B1DDC906C00232848 /* AddRemainderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRemainderViewController.h; sourceTree = "<group>"; };
+		2B4B310C1DDC906C00232848 /* AddRemainderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRemainderViewController.m; sourceTree = "<group>"; };
+		2B4B310D1DDC906C00232848 /* AddRemainderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddRemainderViewController.xib; sourceTree = "<group>"; };
 		2B7336DD1DD59F4D00DEF213 /* FirebaseDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7336E11DD59F4D00DEF213 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B7336E31DD59F4D00DEF213 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +122,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B192C721DDDB49C0068DE80 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				2B192C731DDDB4BD0068DE80 /* UserModel.h */,
+				2B192C741DDDB4BD0068DE80 /* UserModel.m */,
+				2B192C761DDDB9A70068DE80 /* DeviceModal.h */,
+				2B192C771DDDB9A70068DE80 /* DeviceModal.m */,
+				2B192C791DDDB9EE0068DE80 /* TaskModel.h */,
+				2B192C7A1DDDB9EE0068DE80 /* TaskModel.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
 		2B7336D41DD59F4C00DEF213 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +160,7 @@
 		2B7336DF1DD59F4D00DEF213 /* FirebaseDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B192C721DDDB49C0068DE80 /* Modal */,
 				2BA7E6F31DD5E9B1001FF53B /* Common Classes */,
 				2B7336E31DD59F4D00DEF213 /* AppDelegate.h */,
 				2B7336E41DD59F4D00DEF213 /* AppDelegate.m */,
@@ -143,6 +171,9 @@
 				2B2CB8D71DD9B560004E160E /* HomeViewController.h */,
 				2B2CB8D81DD9B560004E160E /* HomeViewController.m */,
 				2B2CB8D91DD9B560004E160E /* HomeViewController.xib */,
+				2B4B310B1DDC906C00232848 /* AddRemainderViewController.h */,
+				2B4B310C1DDC906C00232848 /* AddRemainderViewController.m */,
+				2B4B310D1DDC906C00232848 /* AddRemainderViewController.xib */,
 				2B7336E91DD59F4D00DEF213 /* Main.storyboard */,
 				2B7336EC1DD59F4D00DEF213 /* Assets.xcassets */,
 				2B7336EE1DD59F4D00DEF213 /* LaunchScreen.storyboard */,
@@ -332,6 +363,7 @@
 			files = (
 				2B7336F01DD59F4D00DEF213 /* LaunchScreen.storyboard in Resources */,
 				2B7337141DD59FBC00DEF213 /* GoogleService-Info.plist in Resources */,
+				2B4B310F1DDC906C00232848 /* AddRemainderViewController.xib in Resources */,
 				2B2CB8DB1DD9B560004E160E /* HomeViewController.xib in Resources */,
 				2B7336ED1DD59F4D00DEF213 /* Assets.xcassets in Resources */,
 				2B7336EB1DD59F4D00DEF213 /* Main.storyboard in Resources */,
@@ -483,11 +515,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B7336E81DD59F4D00DEF213 /* LoginViewController.m in Sources */,
+				2B192C7B1DDDB9EE0068DE80 /* TaskModel.m in Sources */,
 				2B7336E51DD59F4D00DEF213 /* AppDelegate.m in Sources */,
 				2BA7E6F11DD5D216001FF53B /* UIAlertController+Window.m in Sources */,
 				2BA7E6E81DD5C448001FF53B /* SignUpViewController.m in Sources */,
+				2B4B310E1DDC906C00232848 /* AddRemainderViewController.m in Sources */,
 				2B7336E21DD59F4D00DEF213 /* main.m in Sources */,
+				2B192C751DDDB4BD0068DE80 /* UserModel.m in Sources */,
 				2B2CB8DA1DD9B560004E160E /* HomeViewController.m in Sources */,
+				2B192C781DDDB9A70068DE80 /* DeviceModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,9 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define baseUrl @"https://firstfirebaseapp-f8b00.firebaseio.com/"
+#define kBaseUrl @"https://firstfirebaseapp-f8b00.firebaseio.com/"
 
 
-#define baseUrl @"1752237435038868"
+//#define baseUrl @"1752237435038868"
 
 #endif /* Constants_h */

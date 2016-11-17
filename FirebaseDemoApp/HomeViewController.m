@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "AddRemainderViewController.h"
+#import "Constants.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -16,6 +18,7 @@
 
 @property (strong, nonatomic) UITableView *remainderList;
 @property (strong, nonatomic) UIButton *addButton;
+@property (strong, nonatomic) NSMutableArray *remainderArrayList;
 
 @end
 
@@ -26,7 +29,7 @@ static NSString *cellIdentifier = @"CellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = _currentloggedInUser.email;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     [self setup];
     // Do any additional setup after loading the view.
@@ -44,8 +47,6 @@ static NSString *cellIdentifier = @"CellIdentifier";
     
     _addButton.frame = CGRectMake((self.view.frame.size.width - 30.0)/2, (CGRectGetMaxY(_remainderList.frame) + 30.0), 30.0, 30.0);
     _addButton.layer.cornerRadius = 30.0/2;
-//    _addButton.layer.borderColor = [UIColor blackColor].CGColor;
-//    _addButton.layer.borderWidth = 0.5;
     _addButton.clipsToBounds = YES;
 
 }
@@ -54,17 +55,15 @@ static NSString *cellIdentifier = @"CellIdentifier";
     UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleDone target:self action:@selector(didClickedLogout:)];
     self.navigationItem.leftBarButtonItem = logoutButton;
     
-//    [self.navigationItem.leftBarButtonItem setTitle:@"Logout"];
-//    [self.navigationItem.leftBarButtonItem setTarget:self];
-//    [self.navigationItem.leftBarButtonItem setStyle:UIBarButtonItemStyleDone];
-//    [self.navigationItem.leftBarButtonItem setAction:@selector(didClickedLogout:)];
-    
+    _remainderArrayList = [[NSMutableArray alloc] init];
     self.ref = [[FIRDatabase database] reference];
     [self readDataFromDB];
     
     _remainderList = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     _remainderList.delegate = self;
     _remainderList.dataSource = self;
+    _remainderList.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    _remainderList.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_remainderList];
     
     _addButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -77,7 +76,7 @@ static NSString *cellIdentifier = @"CellIdentifier";
 
 - (void)readDataFromDB{
     NSString *userId = [FIRAuth auth].currentUser.uid;
-    [[[_ref child:@"user"] child:userId] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+    [[_ref child:userId] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         
     } withCancelBlock:^(NSError * _Nonnull error) {
         
@@ -110,7 +109,10 @@ static NSString *cellIdentifier = @"CellIdentifier";
 }
 
 - (void)didClickedOnAddButton:(id)sender{
-    
+    AddRemainderViewController *homeVC = [[AddRemainderViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController presentViewController:homeVC animated:YES completion:^{
+        
+    }];
 }
 
 @end
